@@ -1,3 +1,20 @@
-ion-tabs{
-    top: 60px;
+.custom-tabs {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .tab-items {
+    display: flex;
+    background-color: var(--ion-big-blue);
+    min-height: 70px;
+    align-items: center;
+    color: white;
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      min-width: 68px;
+      &:first-of-type {
+        margin-left: 14px;
+      }
+    }
+  }
 }

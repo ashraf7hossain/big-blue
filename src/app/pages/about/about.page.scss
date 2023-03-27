@@ -1,0 +1,66 @@
+ion-content {
+  --background: linear-gradient(
+    180deg,
+    rgba(255, 225, 118, 0.23) -0.71%,
+    rgba(123, 109, 120, 0.643073) 47.73%,
+    #090979 99.29%
+  );
+}
+.main {
+  width: 90%;
+  margin: auto;
+  font-size: 14px;
+  .main-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+}
+.thin-card {
+    display: flex;
+    width: 85%;
+    height: 50px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    margin: 30px auto;
+    .left {
+      background-color: var(--ion-big-light-blue);
+      width: 70px;
+      height: 50px;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        max-width: 50%;
+        aspect-ratio: 1/1;
+      }
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+  }
+  .card {
+    width: 85%;
+    margin: 50px auto;
+    .card-header {
+      background-color: var(--ion-big-light-blue);
+      color: white;
+      height: 46px;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px 8px 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card-image {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }

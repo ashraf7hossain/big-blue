@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-top-tabs',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-tabs.component.scss'],
 })
 export class TopTabsComponent  implements OnInit {
-
-  constructor() { }
+  @Input()tabs:any[] = [];
+  constructor() {}
 
   ngOnInit() {}
 

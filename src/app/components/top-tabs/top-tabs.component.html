@@ -1,22 +1,10 @@
-
-<ion-tabs>
-    <ion-router-outlet></ion-router-outlet>
-    <ion-tab-bar slot="top">
-      <ion-tab-button tab="home">
-        <ion-icon name="play-circle"></ion-icon>
-        Listen Now
-      </ion-tab-button>
-      <ion-tab-button tab="about">
-        <ion-icon name="radio"></ion-icon>
-        Radio
-      </ion-tab-button>
-      <ion-tab-button tab="library">
-        <ion-icon name="library"></ion-icon>
-        Library
-      </ion-tab-button>
-      <ion-tab-button tab="search">
-        <ion-icon name="search"></ion-icon>
-        Search
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+<div class="custom-tabs">
+    <div class="tab-items">
+        <ng-container *ngFor = "let tab of tabs">
+            <li>
+                {{ tab }}<ion-icon *ngIf = "tab.toLowerCase() === 'more'" name = "chevron-down-outline"></ion-icon>
+            </li>
+        </ng-container>
+        
+    </div>
+</div>

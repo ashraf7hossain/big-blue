@@ -1,4 +1,33 @@
 <app-header></app-header>
-<h1>
-  about page
-</h1>
+<app-top-tabs [tabs] = "['Course', 'More']"></app-top-tabs>
+
+<ion-content>
+  <div class="main">
+    <h1>
+      OSH Demo (English)
+    </h1>
+
+    <div class="main-card">
+        <ng-container *ngFor = "let card of thinCards">
+        <div class="thin-card">
+          <div class="left">
+            <img [src]="card.img" alt="">
+          </div>
+          <div class="right">
+           {{ card.content }}
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngFor = "let card of cards; let id = index">
+        <div class="card">
+          <div class="card-header">
+            Module: {{ id }} {{ card.title }}
+          </div>
+          <div class="card-image">
+            <img [src]="card.img" alt="">
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</ion-content>
